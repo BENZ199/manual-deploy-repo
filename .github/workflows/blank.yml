@@ -40,7 +40,7 @@ jobs:
               git clone https://github.com/BENZ199/manual-deploy-repo.git .
             else
               echo 'Repository already cloned'
-              cd manual-deploy-repo
+
               git pull
             fi
 
@@ -48,8 +48,7 @@ jobs:
             git fetch --tags
             git checkout $TAG_NAME
 
-            # Navigate to the project directory and run docker-compose
-            cd ~/repo/manual-deploy-repo
+            
             
             
           EOF
