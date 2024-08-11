@@ -32,8 +32,8 @@ jobs:
             sudo apt-get install -y docker.io docker-compose
 
             # Create a directory for the repo
-            mkdir -p ~/repo
-            cd ~/repo
+            mkdir -p ~/repo2
+            cd ~/repo2
 
             # Clone the repository if not already cloned
             if [ ! -d ".git" ]; then
