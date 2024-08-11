@@ -24,7 +24,7 @@ jobs:
         run: |
           TAG_NAME="${{ github.event.inputs.tag }}"
 
-          ssh -i ~/.ssh/id_rsa azureuser@13.71.16.154 << EOF
+          ssh -i ~/.ssh/id_rsa testadmin@13.71.16.154 << EOF
             echo 'Connected to Azure VM'
             
             # Update and install necessary packages
